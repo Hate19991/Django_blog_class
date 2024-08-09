@@ -1,0 +1,30 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <title>vanguard</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/pixelart.css">
+    </head>
+    <body>
+        <nav data-vd-grad1="darkblue" data-vd-grad2="lightblue" class="nav-1 gradient">
+            <ul class="nav-ul-1">
+                <li class="nav-li-1 c-r tr-r">home</li>
+                <li class="nav-li-1 c-w tr-r">landing 2</li>
+                <li class="nav-li-1 c-w tr-r">landing 3</li>
+                <li class="nav-li-1 c-w tr-r">landing 4</li>
+            </ul>
+            h1
+            {% comment %} <button class="menu-button border-n ml-1"></button> {% endcomment %}
+        </nav>
+        <form method="POST" action="#" class="form-style txt-center" style="margin-top: 30px;">
+            {% csrf_token %}
+            <input name="name" type="text" placeholder="place your name here"><br>
+            <input name="email" type="email" placeholder="place your message here"><br>
+            <input name="number" type="number"><br>
+            <input name="name" type="text" placeholder="place your message here"><br>
+            <button class="button bg-b border-n">submit</button>
+            
+        </form>
+<script src="../static/bootstrap.js"></script>
+    </body>
+</html>
